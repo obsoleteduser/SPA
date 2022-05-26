@@ -1,8 +1,8 @@
 const router = async ()=>{
     const routes = [
         {path: "/", view: ()=>{console.log("Viewing Dashboard")}},
-        {path: "/posts", posts: ()=>{console.log("Viewing Posts")}},
-        {path: "/settings", settings: ()=>{console.log("Viewing Settings")}}
+        {path: "/posts", view: ()=>{console.log("Viewing Posts")}},
+        {path: "/settings", view: ()=>{console.log("Viewing Settings")}}
     ]
 
 
@@ -24,8 +24,8 @@ const router = async ()=>{
         }
     }
 
-    console.log(match)
-    console.log(potentialMatches)
+
+    console.log(match.route.view())
 
 }
 
