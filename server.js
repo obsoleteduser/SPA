@@ -8,4 +8,6 @@ app.get('/*', (req, res)=>{
 })
 
 
-app.listen(process.env.PORT || 5560)
+app.listen(process.env.PORT || 5560, ()=>{
+    console.log("Server running on 5560")
+})
